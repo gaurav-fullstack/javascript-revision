@@ -2,16 +2,17 @@
 
 
 const num =11;
-if(num%2===0){
-    console.log("number is even");
-
+if (num % 2 === 0) {
+    console.log("Number is even");
+} else {
+    console.log("Number is odd");
 }
 
 
 // Age Checker: Check if a person is eligible to vote (age 18 or above).
 
 const age=16;
-if(age>=18){
+if(age >= 18){
     console.log("You are eligible to vote.");
 }
 else{
