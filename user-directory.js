@@ -13,18 +13,22 @@ async function getUsersDirectory(){
         for(let user of users){
             console.log(`
                 ------------------------------------------------------------
-                Name: ${user.name},
-                Email: ${user.email},
-                Phone: ${user.phone},
-                City: ${user.address.city},
+
+                Name: ${user.name}
+                Email: ${user.email}
+                Phone: ${user.phone}
+                City: ${user.address.city}
                 Company: ${user.company.name}               
+                
                 ------------------------------------------------------------
                 `);
         }
 
     }
     catch(error){
-        console.error("Error fetching users directory:", error);
+        console.error(
+            `Error: ${error.message}`
+        );
     }
 }
 
